@@ -5,7 +5,25 @@ namespace AdventOfCode2022.Abstractions;
 public abstract class Solution
 {
     protected string DefaultFileInputName
-        => GetType().Namespace + "Input.txt";
+        => $"{GetType().Namespace}Input.txt";
+
+    protected string GetCleanedFileAsString(string inputName)
+    {
+        if (string.IsNullOrEmpty(inputName))
+        {
+            inputName = DefaultFileInputName;
+        }
+
+        return File.ReadAllText(inputName)
+            .Trim()
+            .Replace("\r\n", "\n");
+    }
+
+    protected string[] GetCleanedFileLines(string inputName = "")
+    {
+        return GetCleanedFileAsString(inputName).Split('\n');
+    }
+    
     public abstract void ReadInput(string inputName = "");
 
     public void SolveDay()
