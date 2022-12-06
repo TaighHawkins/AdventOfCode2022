@@ -1,5 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=13e97a3d_002Ddad1_002D415f_002Da32f_002D3b52a314340f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Day1Tests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a24ac6b_002Dfee3_002D4707_002Da06b_002Df3415c174525/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestSolutionOneWorks" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day5Tests.TestSolutionOneWorks&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=13e97a3d_002Ddad1_002D415f_002Da32f_002D3b52a314340f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Day1Tests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;F9C16877-3D52-45A3-943F-024EE2C28908/f:Day1Tests.cs&lt;/ProjectFile&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
@@ -10,6 +15,13 @@
       &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day4Tests.TestSolutionTwoWorks&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day4Tests.OverlappingBoundsIdentifiedCorrectly&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day4Tests.EncompassedAssignmentsIdentifiedCorrectly&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day5Tests.TestSolutionOneWorks&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f663d75c_002D86a2_002D42b7_002Dae58_002Dd05a7d532a22/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestSolutionOneWorks #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day5Tests.TestSolutionOneWorks&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day5Tests.TestSolutionTwoWorks&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

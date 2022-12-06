@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCode2022.Abstractions;
 
-int[] valid = { 1, 2, 3, 4 };
+int[] valid = { 1, 2, 3, 4, 5 };
 
 Console.WriteLine("Hello, World!");
 while (true)

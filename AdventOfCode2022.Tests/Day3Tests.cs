@@ -5,7 +5,7 @@ namespace AdventOfCode2022.Tests;
 
 public class Day3Tests
 {
-    private Solution _solution;
+    private readonly Solution _solution;
     public Day3Tests()
     {
         _solution = new Solution();

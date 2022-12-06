@@ -15,7 +15,7 @@ public abstract class Solution
         }
 
         return File.ReadAllText(inputName)
-            .Trim()
+            .TrimEnd()
             .Replace("\r\n", "\n");
     }
 
@@ -23,7 +23,7 @@ public abstract class Solution
     {
         return GetCleanedFileAsString(inputName).Split('\n');
     }
-    
+
     public abstract void ReadInput(string inputName = "");
 
     public void SolveDay()
