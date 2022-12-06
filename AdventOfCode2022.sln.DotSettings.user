@@ -1,4 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">VISIBLE_FILES</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0a24ac6b_002Dfee3_002D4707_002Da06b_002Df3415c174525/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestSolutionOneWorks" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day5Tests.TestSolutionOneWorks&lt;/TestId&gt;&#xD;
