@@ -6,7 +6,6 @@ public static class IEnumerableExtensions
     {
         return strings
             .Aggregate<IEnumerable<char>>((a, b) => a.Intersect(b))
-            .ToList()
             .Single();
     }
 

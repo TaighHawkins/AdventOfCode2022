@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCode2022.Abstractions;
 
-int[] valid = { 1, 2, 3, 4, 5 };
-
 Console.WriteLine("Hello, World!");
 while (true)
 {
@@ -14,11 +12,6 @@ while (true)
 
     if (day == 0)
     {
-        return;
-    }
-    if (!valid.Contains(day))
-    {
-        Console.WriteLine("We cannot currently handle this day");
         return;
     }
 

@@ -4,6 +4,6 @@ public static class CharExtensions
 {
     public static int ConvertCharToPriority(this char c)
     {
-        return c > 96 ? c - 96 : (c - 64) + 26;
+        return c > 96 ? c - 96 : c - 38;
     }
 }

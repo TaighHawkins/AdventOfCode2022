@@ -4,17 +4,18 @@ namespace Day5.CrateMover;
 
 public class CrateMover
 {
-    protected readonly Stack<char>[] _crateStacks;
+    protected readonly Stack<char>[]? _crateStacks;
 
-    public CrateMover(Stack<char>[]? crateStacks)
+    public CrateMover(IReadOnlyList<Stack<char>>? crateStacks)
     {
         if (crateStacks == null)
         {
             return;
         }
 
-        _crateStacks = new Stack<char>[crateStacks.Length];
-        for (var ii = 0; ii < crateStacks.Length; ii++)
+        // We copy the stacks from one to another to ensure each cratemover works on its own copy
+        _crateStacks = new Stack<char>[crateStacks.Count];
+        for (var ii = 0; ii < crateStacks.Count; ii++)
         {
             var arr = new char[crateStacks[ii].Count];
             crateStacks[ii].CopyTo(arr, 0);
@@ -26,6 +27,12 @@ public class CrateMover
     public string ReadTopOfStacks()
     {
         StringBuilder sb = new();
+        if (_crateStacks == null)
+        {
+            throw new InvalidOperationException(
+                "Unable to read the top of the stacks if the stack map hasn't been loaded");
+        }
+        
         foreach (var stack in _crateStacks)
         {
             sb.Append(stack.Pop());

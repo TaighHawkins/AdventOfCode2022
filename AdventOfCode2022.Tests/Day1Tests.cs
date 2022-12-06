@@ -14,7 +14,7 @@ public class Day1Tests
     [Fact]
     public void TestSolutionOneWorks()
     {
-        Elf elf = _solution.GetMostCalorificElf();
+        Elf? elf = _solution.GetMostCalorificElf();
         Assert.Equal(24000, elf.CalorificValue);
     }
     

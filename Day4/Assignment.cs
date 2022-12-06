@@ -11,12 +11,22 @@ public class Assignment
         Max = max;
     }
 
+    /// <summary>
+    /// Returns true if one assignment is a subset of the other
+    /// </summary>
+    /// <param name="other"></param>
+    /// <returns></returns>
     public bool OneAssignmentIsRedundant(Assignment other)
     {
         return (other.Min >= Min && other.Max <= Max)
             || (Min >= other.Min && Max <= other.Max);
     }
 
+    /// <summary>
+    /// Returns true if any part of one assignment is contained within the other
+    /// </summary>
+    /// <param name="other"></param>
+    /// <returns></returns>
     public bool OverlapsWithAssignment(Assignment other)
     {
         return (other.Min <= Min && other.Max >= Min)

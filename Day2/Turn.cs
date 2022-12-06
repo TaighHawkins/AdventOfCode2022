@@ -16,8 +16,8 @@ public class Turn
             outcome = 3;
         }        
         else if (opponentPlay == RockPaperScissors.Rock && myPlay == RockPaperScissors.Paper
-                 || opponentPlay == RockPaperScissors.Paper && myPlay == RockPaperScissors.Scissors
-                 || opponentPlay == RockPaperScissors.Scissors && myPlay == RockPaperScissors.Rock)
+             || opponentPlay == RockPaperScissors.Paper && myPlay == RockPaperScissors.Scissors
+             || opponentPlay == RockPaperScissors.Scissors && myPlay == RockPaperScissors.Rock)
         {
             outcome = 6;
         }

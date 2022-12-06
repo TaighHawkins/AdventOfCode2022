@@ -6,13 +6,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
 
     public override void ReadInput(string inputName = "")
     {
-        if (string.IsNullOrEmpty(inputName))
-        {
-            inputName = DefaultFileInputName;
-        }
-        
-        List<List<int>> rawValues = File.ReadAllText(inputName)
-            .Replace("\r\n", "\n")
+        List<List<int>> rawValues = GetCleanedFileAsString(inputName)
             .Split("\n\n")
             .Select(x => x.Trim()
                 .Split('\n')
@@ -37,16 +31,15 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
         GetTopThreeMostCalorificElves();
     }
 
-    public Elf GetMostCalorificElf()
+    public Elf? GetMostCalorificElf()
     {
         if (_elves is null)
         {
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
         
-        var calorificElf = _elves
-            .MaxBy(x => x.CalorificValue);
-        Console.WriteLine($"Elf {calorificElf.Id} has the most calories at {calorificElf.CalorificValue}");
+        var calorificElf = _elves.MaxBy(x => x.CalorificValue);
+        Console.WriteLine($"Elf {calorificElf?.Id} has the most calories at {calorificElf?.CalorificValue}");
         return calorificElf;
     }
 

@@ -5,15 +5,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
     private List<Turn>? _turns;
     public override void ReadInput(string inputName = "")
     {
-        if (string.IsNullOrEmpty(inputName))
-        {
-            inputName = DefaultFileInputName;
-        }
-
-        _turns = File.ReadAllText(inputName)
-            .Trim()
-            .Replace("\r\n", "\n")
-            .Split('\n')
+        _turns = GetCleanedFileLines(inputName)
             .Select(
                 x => new Turn
                 {
@@ -34,8 +26,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
         
-        var score = _turns.Select(x => x.GetResultWithFirstConversion())
-            .Sum();
+        var score = _turns.Select(x => x.GetResultWithFirstConversion()).Sum();
         Console.WriteLine($"The first strategy produced a score of {score}");
         return score;
     }
@@ -52,8 +43,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
         
-        var score = _turns.Select(x => x.GetResultWithSecondConversion())
-            .Sum();
+        var score = _turns.Select(x => x.GetResultWithSecondConversion()).Sum();
         Console.WriteLine($"The second strategy produced a score of {score}");
         return score;
     }
