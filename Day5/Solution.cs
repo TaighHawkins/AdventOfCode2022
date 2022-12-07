@@ -38,7 +38,6 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
                     _stacks[jj].Push(letter);
                 }
             }
-
         }
     }
 
