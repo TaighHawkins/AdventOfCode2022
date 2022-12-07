@@ -2,20 +2,16 @@ namespace Day7.Parser.Models;
 
 public abstract class DirectoryObject
 {
-    internal protected DirectoryObject _parent;
+    public DirectoryObject? Parent { get; }
+    public string Name { get; }
 
-    protected DirectoryObject(DirectoryObject parent)
+    protected DirectoryObject(DirectoryObject? parent, string name)
     {
-        _parent = parent;
+        Parent = parent;
+        Name = name;
     }
     public abstract int GetSize();
     public abstract ObjectType GetObjectType();
-    public abstract string GetName();
     public abstract IEnumerable<DirectoryObject> GetChildren();
-    public abstract void AddChild(DirectoryObject? o);
-
-    public DirectoryObject GetParent()
-    {
-        return _parent;
-    }
+    public virtual void AddChild(DirectoryObject o) { }
 }

@@ -34,9 +34,9 @@ public class DirectoryParser
                             string name = IdentifyName(split[2..]);
                             currentDirectory = name switch
                             {
-                                Up => currentDirectory.GetParent(),
+                                Up => currentDirectory.Parent,
                                 _ => currentDirectory.GetChildren()
-                                    .Single(x => x.GetObjectType() == ObjectType.Directory && x.GetName() == name)
+                                    .Single(x => x.GetObjectType() == ObjectType.Directory && x.Name == name)
                             };
                             break;
                         case ls:
@@ -51,14 +51,9 @@ public class DirectoryParser
 
     public Dictionary<string, int> GetDirectorySizes()
     {
-        if (_root is null)
-        {
-            ParseInput();
-        }
-        
         var dict = new Dictionary<string, int>()
         {
-            { _root.GetName(), _root.GetSize() }
+            { _root.Name, _root.GetSize() }
         };
 
         GetSizesOfChildren(ref dict, 
@@ -71,7 +66,7 @@ public class DirectoryParser
     {
         foreach (var child in children)
         {
-            var childName = $"{prefix}/{child.GetName()}";
+            var childName = $"{prefix}/{child.Name}";
             dict.Add(childName, child.GetSize());
             GetSizesOfChildren(ref dict, 
                 child.GetChildren().Where(x => x.GetObjectType() == ObjectType.Directory),
