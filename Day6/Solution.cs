@@ -3,6 +3,12 @@
 public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private SignalParser? _signalParser;
+
+    public Solution()
+    {
+        EventName = "Tuning Trouble";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         _signalParser = new SignalParser(GetCleanedFileAsString(inputName));

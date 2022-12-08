@@ -4,6 +4,11 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private List<Assignment[]> _assignmentPairs;
 
+    public Solution()
+    {
+        EventName = "Camp Cleanup";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         _assignmentPairs = GetCleanedFileLines(inputName).Select(x =>

@@ -4,6 +4,11 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private List<Elf>? _elves;
 
+    public Solution()
+    {
+        EventName = "Calorie Counting";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         List<List<int>> rawValues = GetCleanedFileAsString(inputName)
@@ -12,7 +17,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
                 .Split('\n')
                 .Select(int.Parse).ToList())
             .ToList();
-        
+
         _elves = rawValues.Select(
             (x, ii) => new Elf
             {
@@ -37,7 +42,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
         {
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
-        
+
         var calorificElf = _elves.MaxBy(x => x.CalorificValue);
         Console.WriteLine($"Elf {calorificElf?.Id} has the most calories at {calorificElf?.CalorificValue}");
         return calorificElf;
@@ -49,12 +54,12 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
         {
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
-        
+
         List<Elf> topThreeElves = _elves
             .OrderByDescending(x => x.CalorificValue)
             .Take(3)
             .ToList();
-        
+
         Console.WriteLine($"The top three elves have a calorific value {topThreeElves.Sum(x => x.CalorificValue)}");
         return topThreeElves;
     }

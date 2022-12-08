@@ -22,7 +22,6 @@ while (true)
         continue;
     }
 
-    Console.WriteLine($"Solving for day {day} ...");
     var instance = Activator.CreateInstance(x);
     if (instance is null)
     {
@@ -30,6 +29,7 @@ while (true)
         continue;
     }
     var solution = (Solution)instance;
+    solution.PrintEntry();
 
     solution.SolveDay();
 }

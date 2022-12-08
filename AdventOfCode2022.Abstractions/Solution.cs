@@ -7,6 +7,13 @@ public abstract class Solution
     protected string DefaultFileInputName
         => $"{GetType().Namespace}Input.txt";
 
+    public string EventName { get; set; }
+
+    public void PrintEntry()
+    {
+        Console.WriteLine($"{GetType().Namespace}: {EventName}", ConsoleColor.Green);
+    }
+
     protected string GetCleanedFileAsString(string inputName)
     {
         if (string.IsNullOrEmpty(inputName))

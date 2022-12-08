@@ -9,6 +9,12 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private Stack<char>[]? _stacks;
     private Instruction[]? _instructions;
+
+    public Solution()
+    {
+        EventName = "Supply Stacks";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         var rawInput = GetCleanedFileAsString(inputName);

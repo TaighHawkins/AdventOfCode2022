@@ -5,6 +5,12 @@ namespace Day7;
 public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private DirectoryParser _parser;
+
+    public Solution()
+    {
+        EventName = "No Space Left On Device";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         _parser = new DirectoryParser(GetCleanedFileLines(inputName));
@@ -27,7 +33,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
     {
         FindSmallestDirectoryAboveRequiredSpace();
     }
-    
+
     public int FindSmallestDirectoryAboveRequiredSpace()
     {
         var dict = _parser.GetDirectorySizes();

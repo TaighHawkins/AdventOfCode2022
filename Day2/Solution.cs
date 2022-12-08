@@ -3,6 +3,12 @@
 public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private List<Turn>? _turns;
+
+    public Solution()
+    {
+        EventName = "Rock Paper Scissors";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         _turns = GetCleanedFileLines(inputName)
@@ -25,7 +31,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
         {
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
-        
+
         var score = _turns.Select(x => x.GetResultWithFirstConversion()).Sum();
         Console.WriteLine($"The first strategy produced a score of {score}");
         return score;
@@ -35,14 +41,14 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
     {
         GetStrategyScoreBasedOnOutcome();
     }
-    
+
     public int GetStrategyScoreBasedOnOutcome()
     {
         if (_turns is null)
         {
             throw new InvalidOperationException($"Please call {nameof(ReadInput)} before calling a solve operation");
         }
-        
+
         var score = _turns.Select(x => x.GetResultWithSecondConversion()).Sum();
         Console.WriteLine($"The second strategy produced a score of {score}");
         return score;

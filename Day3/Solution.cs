@@ -5,6 +5,12 @@ namespace Day3;
 public class Solution : AdventOfCode2022.Abstractions.Solution
 {
     private string[] _rucksacks;
+
+    public Solution()
+    {
+        EventName = "Rucksack Reorganization";
+    }
+
     public override void ReadInput(string inputName = "")
     {
         _rucksacks = GetCleanedFileLines(inputName);
