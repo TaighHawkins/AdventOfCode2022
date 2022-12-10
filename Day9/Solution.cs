@@ -31,7 +31,7 @@ public class Solution : AdventOfCode2022.Abstractions.Solution
 
         int count = rope.CountUniqueTailPositions();
 
-        Console.WriteLine($"(v2) The tail took {count} unique positions");
+        Console.WriteLine($"The tail took {count} unique positions");
         return count;
     }
 
