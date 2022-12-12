@@ -5,7 +5,7 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5fc24dbb_002Db7a7_002D4295_002Da4c3_002Df0b6bb5ff5b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5fc24dbb_002Db7a7_002D4295_002Da4c3_002Df0b6bb5ff5b1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9527ddc2_002D2820_002D4719_002Dafe4_002D7a184d2fb546/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ConfirmSolutionTwoWorks #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -13,9 +13,11 @@
     &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day11Tests.ConfirmSolutionTwoWorks&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b270e3d5_002D33d6_002D4f15_002Db0c5_002Dfe555b3e1e09/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ConfirmSolutionTwoWorks" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b270e3d5_002D33d6_002D4f15_002Db0c5_002Dfe555b3e1e09/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ConfirmSolutionTwoWorks" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day11Tests.ConfirmSolutionTwoWorks&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day12Tests.ConfirmSolutionOneWorks&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::F9C16877-3D52-45A3-943F-024EE2C28908::net6.0::AdventOfCode2022.Tests.Day12Tests.ConfirmSolutionTwoWorks&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
