@@ -3,7 +3,7 @@ namespace Day11;
 public class Monkey
 {
     private readonly string _worryModifier;
-    public readonly List<long> _items;
+    private readonly List<long> _items;
     private Monkey _successMonkey;
     private Monkey _failMonkey;
 

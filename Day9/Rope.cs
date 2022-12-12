@@ -69,5 +69,4 @@ public class Rope
             .DistinctBy(x => (x[0], x[1]))
             .Count();
     }
-
 }
