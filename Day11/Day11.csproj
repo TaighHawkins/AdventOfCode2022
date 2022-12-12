@@ -8,14 +8,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AdventOfCode2022.Abstractions\AdventOfCode2022.Abstractions.csproj" />
-      <ProjectReference Include="..\AdventOfCode2022.Utilities\AdventOfCode2022.Utilities.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="day3TestInput.txt">
+      <None Update="day11TestInput.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Day3Input.txt">
+      <None Update="Day11Input.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

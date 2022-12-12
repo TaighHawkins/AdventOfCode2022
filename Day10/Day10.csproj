@@ -12,10 +12,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="day3TestInput.txt">
+      <None Update="day10TestInput.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Day3Input.txt">
+      <None Update="Day10Input.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

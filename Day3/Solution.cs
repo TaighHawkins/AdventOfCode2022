@@ -1,4 +1,5 @@
-﻿using Day3.Extensions;
+﻿using AdventOfCode2022.Utilities;
+using Day3.Extensions;
 
 namespace Day3;
 
